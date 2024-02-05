@@ -31,7 +31,7 @@ myForm.addEventListener('submit', function(e){
       }).then(() => {
           myForm.reset()
           window.location.reload()
-      })
+      });
   }).catch((error) => {
     console.error('Error occurred:', error);
     alert('Error occurred. Check the console for details.');
