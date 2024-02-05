@@ -9,7 +9,7 @@ module.exports = {
       fontFamily: {
         'main': 'Coolvetica, sans-serif',
       },
-      backgroundColor: {
+      colors: {
         'primary': '#FFBF00',
       }
     },
