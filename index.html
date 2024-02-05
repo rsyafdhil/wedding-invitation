@@ -23,12 +23,22 @@
     </style>
   </head>
   <body class="overflow-x-hidden">
-    <header class="py-8">
-        <ul class="w-fit grid grid-cols-3 gap-8 mx-auto">
-            <li class="text-primary text-center font-coolvetica tracking-wider"><a href="#">Home</a></li>
-            <li class="text-white text-center font-coolvetica tracking-wider"><a href="#">Invitation</a></li>
-            <li class="text-white text-center font-coolvetica tracking-wider"><a href="#">Our Story</a></li>
-        </ul>
+    <header class="py-8 fixed w-full mx-auto">
+        <div class="flex items-center px-4">
+            <button class="lg:hidden block absolute right-8 scale-75" id="navbar-button">
+                <span class="hamburger-line transition duration-300 ease-in-out origin-top-left rotate-45;"></span>
+                <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+              </svg>
+            </button>
+        <nav id="navbar-list" class="hidden absolute py-3 bg-white rounded-lg max-w-[200px] w-full lg:right-1/2 lg:top-1/2 right-4 top-24 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex justify-center gap-8 tracking-wider">
+                <li class="group lg:text-center"><a href="" class="font-coolvetica  lg:text-white text-black px-8 py-2 text-lg font-normal hover:text-primary transition duration-100 ease-in-out">Home</a></li>
+                <li class="group lg:text-center"><a href="" class="font-coolvetica  lg:text-white text-black px-8 py-2 text-lg font-normal hover:text-primary transition duration-100 ease-in-out">Invitation</a></li>
+                <li class="group lg:text-center"><a href="" class="font-coolvetica  lg:text-white text-black px-8 py-2 text-lg font-normal hover:text-primary transition duration-100 ease-in-out">Our Story</a></li>
+            </ul>
+        </nav>
+        </div>
     </header>
     <section id="main-section" class="pt-[219px] lg:pt-[141px] px-3">
         <img src="./dist/img/main-bg.png" alt="" class="-z-10 absolute top-0 left-0 lg:w-full lg:h-full object-cover h-[855px] brightness-50">
@@ -40,13 +50,11 @@
                 <h1 class="font-normal text-[120px] font-coolvetica text-white mt-2">Gusti & Najwa</h1>
             </div>
         </div>
-        <!-- Hidden when desktop -->
         <div class="z-10 relative mx-auto max-w-screen-xl px-3 sm:px-6 content-center lg:px-8 w-full">
             <div class="lg:hidden block">
                 <h1 class="font-normal font-coolvetica text-white">- You are invited to the wedding of.</h1>
                 <h1 class="font-normal text-6xl font-coolvetica text-white mt-2">Gusti & Najwa</h1>
             </div>
-            <!-- hidden when LG -->
                 <form action="" class="lg:grid lg:grid-cols-5 lg: gap-8 mx-auto ">
                     <div class="mt-8 lg:mt-0 col-span-2">
                         <label for="" class="font-normal font-archivo text-white ">Full Name *</label>
@@ -62,10 +70,9 @@
                 </form>
                 <br>
             <p class="mt-[32.88px] font-archivo text-white ">*Harap diisi untuk kepentingan undangan.</p>
-        </div>
-        
+        </div> 
     </section>
-    <section id="details" class="hidden lg:grid grid-cols-3 gap-0 w-9/12 mt-8 py-8 mx-auto bg-white border-t-8 border-primary shadow-2xl">
+    <section id="details" class="hidden lg:grid grid-cols-3 gap-0 w-9/12 mt-14 py-8 mx-auto bg-white border-t-8 border-primary shadow-2xl">
         <div class="w-full mx-auto flex justify-center items-center gap-4 border-r-2 border-black/25">
             <img src="./dist/img/calendar-circle.png" alt="" class="w-8 h-8">
             <div class="">
@@ -109,11 +116,11 @@
     <section id="maps" class="lg:mt-[144px] px-8 lg:px-[216px] mt-[80.81px] lg:flex lg:items-center lg:gap-6">
         <div class="flex-wrap lg:w-1/2 ">
             <h1 class="font-coolvetica text-black text-xl brightness-50 opacity-85">Harapan Kami</h1>
-            <p class="font-archivo mt-4 w-[396px]">Kami harap bapak/ibu/kakak dapat menghadiri dan menyaksikan acara pernikahan Gusti & Najwa yang akan dilaksanakan pada tanggal <span class="font-semibold text-primary italic">16 Februari 2024</span> , di <span class="font-semibold italic text-primary">Aula SMK Telkom Sidoarjo</span>.</p>
+            <p class="font-archivo mt-4 lg:w-[396px] w-[365px] ">Kami harap bapak/ibu/kakak dapat menghadiri dan menyaksikan acara pernikahan Gusti & Najwa yang akan dilaksanakan pada tanggal <span class="font-semibold text-primary italic">16 Februari 2024</span> , di <span class="font-semibold italic text-primary">Aula SMK Telkom Sidoarjo</span>.</p>
         </div>
         
         <!-- Maps -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7911.9994481034255!2d112.72676459841003!3d-7.46528000039147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e6d71181af21%3A0x4232ab0204ccbfe5!2sSMK%20TELKOM%20Sidoarjo!5e0!3m2!1sid!2sid!4v1707095732256!5m2!1sid!2sid" class="w-[364px] mt-[44px] h-[364px] lg:w-[405px] lg:h-[405px] lg:mt-0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7911.9994481034255!2d112.72676459841003!3d-7.46528000039147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e6d71181af21%3A0x4232ab0204ccbfe5!2sSMK%20TELKOM%20Sidoarjo!5e0!3m2!1sid!2sid!4v1707095732256!5m2!1sid!2sid" class="lg:w-[364px] lg:h-[364px] w-[250px] h-[250px] mt-[44px] lg:mt-0 px-4" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <footer>
         <section id="footer" class="pt-[135px] px-8 pb-5">
@@ -128,5 +135,6 @@
             </div>
         </section>
     </footer>
+    <script src="./dist/js/script.js"></script>
   </body>
 </html>
