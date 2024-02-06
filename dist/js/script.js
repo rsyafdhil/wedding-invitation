@@ -37,3 +37,14 @@ myForm.addEventListener('submit', function(e){
     alert('Error occurred. Check the console for details.');
   });
 });
+
+window.onscroll = () => {
+  const header = document.getElementById('my-header');
+  const fixedNav = header.offsetTop;
+
+  if(window.pageYOffset > fixedNav){
+    header.classList.add('nav-fixed');
+  } else{
+    header.classList.remove('nav-fixed');
+  }
+};
