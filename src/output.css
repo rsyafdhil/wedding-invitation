@@ -1081,6 +1081,10 @@ video {
   backdrop-filter: blur(5px);
 }
 
+.peteng {
+  filter: brightness(30%);
+}
+
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(255 191 0 / var(--tw-text-opacity));

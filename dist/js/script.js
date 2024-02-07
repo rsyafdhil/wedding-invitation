@@ -23,7 +23,7 @@ myForm.addEventListener('submit', function(e){
       Swal.fire({
           title: 'Success!',
           text: 'Email balasan yang berisi kode QR akan dikirim 1x24 jam pada email yang bersangkutan.',
-          timer: 2000,
+          timer: 3000,
           timerProgressBar: true,
           icon: 'success',
           iconColor: '#FFBF00',
